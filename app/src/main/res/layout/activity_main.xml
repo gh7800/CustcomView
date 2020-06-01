@@ -4,11 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <cn.shineiot.viewframe.views.TitleRelativelayout
         android:id="@+id/titlerl"
         android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:visibility="gone"/>
+        android:layout_height="100px"/>
+
+    <cn.shineiot.viewframe.views.CreditScoreView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/black"
+        />
 </LinearLayout>
