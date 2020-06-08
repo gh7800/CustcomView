@@ -12,6 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="100px"/>
 
+    <cn.shineiot.viewframe.views.TitleRelativelayout
+        android:id="@+id/titlerl1"
+        android:layout_width="match_parent"
+        android:layout_height="100px"/>
+
     <cn.shineiot.viewframe.views.CreditScoreView
         android:layout_width="match_parent"
         android:layout_height="300dp"
