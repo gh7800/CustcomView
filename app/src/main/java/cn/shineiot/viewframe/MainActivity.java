@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         TitleRelativelayout titleRelativelayout = findViewById(R.id.titlerl);
         TitleRelativelayout titleRelativelayout1 = findViewById(R.id.titlerl1);
         titleRelativelayout.setVisibility(View.VISIBLE);
-        titleRelativelayout.setImg_left(R.mipmap.ic_launcher);
-        titleRelativelayout.setImg_right(R.drawable.icon_right_jiantou);
+//        titleRelativelayout.setImg_left(R.mipmap.ic_launcher);
+//        titleRelativelayout.setImg_right(R.drawable.icon_right_jiantou);
         titleRelativelayout.setTv_title("title");
         titleRelativelayout.setTv_content("content");
 

@@ -12,7 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/px24"
-        android:layout_marginRight="@dimen/px10"
+        android:layout_marginRight="@dimen/px14"
+        android:layout_marginTop="@dimen/px10"
+        android:layout_marginBottom="@dimen/px10"
         android:scaleType="center"
         android:layout_centerVertical="true"/>
     <TextView
