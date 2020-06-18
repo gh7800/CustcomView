@@ -8,4 +8,11 @@
         <attr name="contentText" format="string"/>
 
     </declare-styleable>
+
+    <declare-styleable name="IButton">
+        <attr name="normal_color" format="color"/>
+        <attr name="pressed_color" format="color"/>
+        <attr name="enabled_color" format="color"/>
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
 </resources>
