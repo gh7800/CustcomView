@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <cn.shineiot.viewframe.views.TitleRelativelayout
         android:id="@+id/titlerl"
         android:layout_width="match_parent"
+        app:imgLeft="@mipmap/ic_launcher"
+        app:imgRight="@drawable/icon_right_jiantou"
+        android:layout_height="150px"/>
+
+    <cn.shineiot.viewframe.views.TitleRelativelayout
+        android:id="@+id/titlerl1"
+        android:layout_width="match_parent"
+        app:imgRight="@drawable/icon_right_jiantou"
         android:layout_height="100px"/>
 
     <cn.shineiot.viewframe.views.CreditScoreView
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:visibility="gone"
         android:background="@android:color/black"
         />
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
