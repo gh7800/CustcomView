@@ -85,7 +85,7 @@ public class TitleRelativelayout extends RelativeLayout {
     }
 
     /**
-     * 只给layout添加了监听事件
+     * 给layout添加了监听事件
      */
     public void setLayout_Onclick(OnClickListener listener) {
         mRelativeLayout.setOnClickListener(listener);
