@@ -29,9 +29,13 @@
 
     <cn.shineiot.viewframe.views.ICanvas
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         />
 
+    <cn.shineiot.viewframe.views.IPaint
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
     <cn.shineiot.viewframe.views.CreditScoreView
         android:layout_width="match_parent"
         android:layout_height="300dp"
