@@ -105,4 +105,11 @@ public class ICanvas extends View {
         paintLine.setStyle(Paint.Style.FILL);
         canvas.drawPath(pathLineClose,paintLine);
     }
+
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
 }

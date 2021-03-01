@@ -1,5 +1,6 @@
 package cn.shineiot.viewframe.views;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -52,8 +53,9 @@ public class IPaint extends View {
 
 
 //		辐射渐变
-		Shader shader = new RadialGradient(300,300,200, Color.parseColor("#E91E63"),
-				Color.parseColor("#2196F3"), Shader.TileMode.MIRROR);
+		@SuppressLint("DrawAllocation")
+		Shader shader = new RadialGradient(300,300,200, Color.parseColor("#FFE91E63"),
+				Color.parseColor("#FF2196F3"), Shader.TileMode.CLAMP);
 
 //		扫描渐变
 //		Shader shader = new SweepGradient(300,300, Color.parseColor("#E91E63"),
