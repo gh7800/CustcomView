@@ -30,11 +30,19 @@
     <cn.shineiot.viewframe.views.ICanvas
         android:layout_width="wrap_content"
         android:layout_height="150dp"
+        android:visibility="visible"
         />
 
     <cn.shineiot.viewframe.views.IPaint
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <cn.shineiot.viewframe.views.ScanView
+        android:id="@+id/scanView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
         />
     <cn.shineiot.viewframe.views.CreditScoreView
         android:layout_width="match_parent"

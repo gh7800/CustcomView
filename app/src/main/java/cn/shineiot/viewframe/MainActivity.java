@@ -5,6 +5,8 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import cn.shineiot.viewframe.views.ScanView;
 import cn.shineiot.viewframe.views.TitleRelativelayout;
 
 /**
@@ -17,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ScanView scanView = findViewById(R.id.scanView);
+        scanView.start();
 
         loadTitleRelativelayout();
     }
