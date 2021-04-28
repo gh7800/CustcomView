@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources >
-    <declare-styleable name="TitleRelativelayout">
+    <declare-styleable name="TitleRelativeLayout">
 
         <attr name="imgLeft" format="reference"/>
         <attr name="title" format="string"/>
@@ -14,5 +14,11 @@
         <attr name="pressed_color" format="color"/>
         <attr name="enabled_color" format="color"/>
         <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MdStyleProgress">
+        <attr name="progress_color" format="color"/>
+        <attr name="progress_width" format="dimension"/>
+        <attr name="progress_radius" format="dimension"/>
     </declare-styleable>
 </resources>

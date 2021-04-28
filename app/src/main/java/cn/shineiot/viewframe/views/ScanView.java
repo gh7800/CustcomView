@@ -13,6 +13,7 @@ import android.view.View;
 
 /**
  * @author GF63
+ * 雷达扫描
  */
 public class ScanView extends View {
 

@@ -1,53 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <cn.shineiot.viewframe.views.TitleRelativelayout
-        android:id="@+id/titlerl"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        app:imgLeft="@mipmap/ic_launcher"
-        app:imgRight="@drawable/icon_right_jiantou"
-        android:layout_height="150px"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <cn.shineiot.viewframe.views.IButton
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        app:radius="48dp"
-        app:normal_color="@color/colorPrimary"
-        app:pressed_color="@color/colorPrimaryDark"
-        app:enabled_color="@android:color/darker_gray"
-        android:layout_margin="10dp"
-        android:textColor="@android:color/white"
-        android:text="@string/app_name"
-        android:gravity="center"
-        />
+        <cn.shineiot.viewframe.views.TitleRelativeLayout
+            android:id="@+id/titlerl"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            app:imgLeft="@mipmap/ic_launcher"
+            app:imgRight="@drawable/icon_right_jiantou"
+            app:title="@string/app_name"
+            app:contentText="@string/app_name"
+            />
 
-    <cn.shineiot.viewframe.views.ICanvas
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:visibility="visible"
-        />
+        <cn.shineiot.viewframe.views.IButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            app:enabled_color="@android:color/darker_gray"
+            app:normal_color="@color/colorPrimary"
+            app:pressed_color="@color/colorPrimaryDark"
+            app:radius="48dp" />
 
-    <cn.shineiot.viewframe.views.IPaint
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        />
-    <cn.shineiot.viewframe.views.ScanView
-        android:id="@+id/scanView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
-        />
-    <cn.shineiot.viewframe.views.CreditScoreView
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:visibility="gone"
-        android:background="@android:color/black"
-        />
-</androidx.appcompat.widget.LinearLayoutCompat>
+        <cn.shineiot.viewframe.views.ICanvas
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:visibility="visible" />
+
+        <cn.shineiot.viewframe.views.IPaint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <cn.shineiot.viewframe.views.ScanView
+            android:id="@+id/scanView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center" />
+
+        <cn.shineiot.viewframe.views.CreditScoreView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@android:color/black"
+            android:visibility="gone" />
+
+        <cn.shineiot.viewframe.views.MdStyleProgress
+            android:id="@+id/circleView"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            app:progress_color="@color/black"
+            app:progress_width="3dp"
+            app:progress_radius="50dp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

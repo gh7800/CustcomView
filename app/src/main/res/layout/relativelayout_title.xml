@@ -1,49 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tr_rl"
-                android:clickable="true"
-                android:background="@drawable/layout_background_pressed"
-                android:gravity="center_vertical">
+    android:id="@+id/tr_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background_pressed"
+    android:gravity="center_vertical">
 
     <ImageView
         android:id="@+id/tr_img_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="@dimen/px24"
-        android:layout_marginRight="@dimen/px14"
         android:layout_marginTop="@dimen/px10"
+        android:layout_marginRight="@dimen/px14"
         android:layout_marginBottom="@dimen/px10"
-        android:scaleType="center"
-        android:layout_centerVertical="true"/>
+        android:scaleType="center" />
+
     <TextView
         android:id="@+id/tr_tv_title"
-        android:layout_toRightOf="@id/tr_img_left"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_toRightOf="@id/tr_img_left"
         android:gravity="center_vertical"
-        android:textSize="@dimen/px32"/>
+        android:textSize="@dimen/px32" />
 
     <ImageView
         android:id="@+id/tr_img_right"
-        android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="center"
-        android:layout_marginLeft="@dimen/px10"
+        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="@dimen/px14"/>
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginRight="@dimen/px14"
+        android:scaleType="center" />
+
     <TextView
         android:id="@+id/tr_tv_content"
-        android:layout_toLeftOf="@id/tr_img_right"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:textSize="@dimen/px32"
-        android:gravity="center_vertical"/>
+        android:layout_toLeftOf="@id/tr_img_right"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/px32" />
+
     <TextView
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="@dimen/px1"
-        android:background="@android:color/darker_gray"/>
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray" />
 </RelativeLayout>
